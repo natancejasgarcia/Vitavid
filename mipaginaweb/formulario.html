@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vitavid | Contáctanos</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" href="stylecontacto.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="icon" href="vlogo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="cabecera">
+      <div class="iconos icono-izquierdo">
+        <!-- Aquí puedes poner otros íconos si los tienes -->
+      </div>
+      <div class="logo11">
+        <a href="index.html">
+          <img src="logo1.png" alt="Logo Vitavid" />
+        </a>
+      </div>
+      <div class="iconos icono-derecho">
+        <a href="iniciosesion.html">
+          <i class="fas fa-user icono-usuario"></i>
+        </a>
+      </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- Contenedor para centrar el menú y alinear el botón de hamburguesa a la derecha -->
+      <div class="container-fluid justify-content-between">
+        <!-- Botón de hamburguesa -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Elementos del menú -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"><strong>Inicio</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><strong>Servicios</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="formulario.html"><strong>Contacto</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobrenosotros.html"><strong>Sobre nosotros</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="trabajaconnosotros.html"><strong>Trabaja con nosotros</strong></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Bootstrap y dependencias de JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <section class="form-container">
+      <h2>Contáctanos</h2>
+      <form action="/ruta_del_servidor" method="POST">
+        <div class="input-field">
+          <label for="name">Nombre:</label>
+          <input type="text" id="name" name="name" required />
+        </div>
+
+        <div class="input-field">
+          <label for="email">Correo Electrónico:</label>
+          <input type="email" id="email" name="email" required />
+        </div>
+
+        <div class="input-field">
+          <label for="subject">Asunto:</label>
+          <input type="text" id="subject" name="subject" />
+        </div>
+
+        <div class="input-field">
+          <label for="message">Mensaje:</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+        </div>
+
+        <div class="submit-button">
+          <button type="submit">Enviar</button>
+        </div>
+      </form>
+    </section>
+
+    <!-- Puedes agregar el footer aquí -->
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuHamburguesa = document.querySelector(".menu-hamburguesa");
+        const menuLateral = document.querySelector(".menu-lateral");
+
+        menuHamburguesa.addEventListener("click", function () {
+          if (menuLateral.classList.contains("open")) {
+            menuLateral.classList.remove("open");
+          } else {
+            menuLateral.classList.add("open");
+          }
+        });
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        const closeIcon = document.querySelector(".close-menu");
+        const sideMenu = document.querySelector(".menu-lateral");
+
+        closeIcon.addEventListener("click", function () {
+          sideMenu.classList.toggle("open");
+        });
+      });
+    </script>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Sobre Nosotros</h4>
+          <p>
+            En Vitavid, nos esforzamos por proporcionar la mejor atención y servicios para la tercera edad y los niños.
+            Tu bienestar es nuestra prioridad.
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contacto</h4>
+          <p>Email: info@vitavid.com</p>
+          <p>Teléfono: +123 456 7890</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Síguenos</h4>
+          <ul class="socials">
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2023 Vitavid | Diseñado por NatanCejas</div>
+    </footer>
+  </body>
+</html>

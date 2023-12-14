@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Trabajar con nosotros | Vitavid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.8.1/slick.css"/>
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.8.1/slick-theme.css"/>
+    
+    <link rel="stylesheet" href="carrito.css">
+    <link rel="stylesheet" href="menu.css">
+    <link rel="icon" href="vlogo.png" type="image/x-icon">
+</head>
+<body>
+    <header class="cabecera">
+        <div class="iconos icono-izquierdo">
+            <!-- Aquí puedes poner otros íconos si los tienes -->
+        </div>
+        <div class="logo11">
+            <a href="index.html">
+                <img src="logo1.png" alt="Logo Vitavid">
+            </a>
+        </div>
+        <div class="iconos icono-derecho">
+            
+            <a href="iniciosesion.html">
+            <i class="fas fa-user icono-usuario"></i>
+            </a>
+            <i class="fas fa-bars menu-hamburguesa"></i>
+        </div>
+    </header>
+    <div class="menu-lateral">
+        <i class="fas fa-times close-menu"></i>
+        <ul>
+            <li><a href="index.html">Inicio</a></li>
+            <li><a href="#">Servicios</a></li>
+            <li><a href="formulario.html">Contacto</a></li>
+            <li><a href="sobrenosotros.html">Sobre nosotros</a></li>
+            <li><a href="trabajaconnosotros.html">Trabaja con nosotros</a></li>
+        </ul>
+    </div>
+    <div class="carrito-cuadro">
+    <div class="cart">
+        <h1>Carrito de Compras</h1>
+        
+        <ul class="cart-items">
+            <!-- Aquí se agregarán los productos dinámicamente -->
+        </ul>
+        
+        <div class="cart-total">
+            <strong>Total:</strong> 
+            <span class="total-price">$0</span>
+        </div>
+        
+        <button class="btn-checkout">Finalizar Compra</button>
+    </div>
+</div>
+    <script src="script.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            const menuHamburguesa = document.querySelector(".menu-hamburguesa");
+            const menuLateral = document.querySelector(".menu-lateral");
+        
+            menuHamburguesa.addEventListener("click", function() {
+                if (menuLateral.classList.contains("open")) {
+                    menuLateral.classList.remove("open");
+                } else {
+                    menuLateral.classList.add("open");
+                }
+            });
+        });
+        document.addEventListener("DOMContentLoaded", function() {
+            const closeIcon = document.querySelector(".close-menu");
+            const sideMenu = document.querySelector(".menu-lateral");
+        
+            closeIcon.addEventListener("click", function() {
+                sideMenu.classList.toggle("open");
+            });
+        });
+        
+        </script>
+        <footer class="site-footer">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h4>Sobre Nosotros</h4>
+                    <p>En Vitavid, nos esforzamos por proporcionar la mejor atención y servicios para la tercera edad y los niños. Tu bienestar es nuestra prioridad.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contacto</h4>
+                    <p>Email: info@vitavid.com</p>
+                    <p>Teléfono: +123 456 7890</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Síguenos</h4>
+                    <ul class="socials">
+                        <li><a href="#"><i class="fab fa-facebook"></i></a></li>
+                        <li><a href="#"><i class="fab fa-twitter"></i></a></li>
+                        <li><a href="#"><i class="fab fa-instagram"></i></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                &copy; 2023 Vitavid | Diseñado por NatanCejas
+            </div>
+        </footer>
+</body>
+</html>

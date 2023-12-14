@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Trabajar con nosotros | Vitavid</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.8.1/slick.css" />
+    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/jquery.slick/1.8.1/slick-theme.css" />
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+
+    <link rel="stylesheet" href="trabaja.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="icon" href="vlogo.png" type="image/x-icon" />
+  </head>
+  <body>
+    <header class="cabecera">
+      <div class="iconos icono-izquierdo">
+        <!-- Aquí puedes poner otros íconos si los tienes -->
+      </div>
+      <div class="logo11">
+        <a href="index.html">
+          <img src="logo1.png" alt="Logo Vitavid" />
+        </a>
+      </div>
+      <div class="iconos icono-derecho">
+        <a href="iniciosesion.html">
+          <i class="fas fa-user icono-usuario"></i>
+        </a>
+      </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- Contenedor para centrar el menú y alinear el botón de hamburguesa a la derecha -->
+      <div class="container-fluid justify-content-between">
+        <!-- Botón de hamburguesa -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Elementos del menú -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"><strong>Inicio</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><strong>Servicios</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="formulario.html"><strong>Contacto</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobrenosotros.html"><strong>Sobre nosotros</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="trabajaconnosotros.html"><strong>Trabaja con nosotros</strong></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Bootstrap y dependencias de JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <h1>Trabaja con nosotros</h1>
+
+    <div class="content-container">
+      <!-- Sección de imágenes y párrafos -->
+      <div class="image-text-section">
+        <div class="image-text-item">
+          <img src="logos/logo1.png" alt="Imagen 1" />
+          <p>
+            Somos una empresa líder en el sector, reconocida por nuestro compromiso con la excelencia y la innovación
+            constante en cada proyecto que emprendemos.
+          </p>
+        </div>
+        <div class="image-text-item">
+          <img src="logos/logo2.png" alt="Imagen 2" />
+          <p>
+            Al ser parte de nosotros, no solo te unirás a una empresa de renombre, sino que también tendrás la
+            oportunidad de maximizar tus ingresos y alcanzar tu potencial financiero.
+          </p>
+        </div>
+        <div class="image-text-item">
+          <img src="logos/logo3.png" alt="Imagen 3" />
+          <p>
+            Estamos en búsqueda de profesionales apasionados y altamente capacitados que quieran unirse a nuestro equipo
+            y contribuir al continuo crecimiento de nuestra firma.
+          </p>
+        </div>
+      </div>
+      <div class="separator"></div>
+      <!-- Pequeño párrafo con botón -->
+      <div class="intro-section">
+        <div class="imagendoc">
+          <img src="doctor.jpg" />
+        </div>
+        <h3>
+          Únete a nuestro equipo y forma parte de una empresa líder en el sector médico. Valoramos la dedicación y el
+          conocimiento de nuestros profesionales, ofreciendo un entorno enriquecedor donde tu talento será reconocido y
+          recompensado. Si estás buscando un lugar donde tu pasión por la medicina se combine con oportunidades de
+          crecimiento y desarrollo, somos tu mejor elección.
+        </h3>
+        <div class="botones">
+          <a href="#" class="button blue-button">Unete a nosotros</a>
+        </div>
+      </div>
+
+      <!-- Formulario -->
+      <div class="form-section">
+        <h2>
+          Rellena el formulario para<br />
+          obtener mas información
+        </h2>
+        <form action="your_script_here.php" method="post">
+          <input type="text" name="name" placeholder="Nombre" required />
+          <input type="tel" name="phone" placeholder="Número de Teléfono" required />
+          <input type="email" name="email" placeholder="Correo" required />
+          <input type="text" name="specialty" placeholder="Especialidad" required />
+          <button type="submit" class="button green-button">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+    <script>
+      document.addEventListener("DOMContentLoaded", function () {
+        const menuHamburguesa = document.querySelector(".menu-hamburguesa");
+        const menuLateral = document.querySelector(".menu-lateral");
+
+        menuHamburguesa.addEventListener("click", function () {
+          if (menuLateral.classList.contains("open")) {
+            menuLateral.classList.remove("open");
+          } else {
+            menuLateral.classList.add("open");
+          }
+        });
+      });
+      document.addEventListener("DOMContentLoaded", function () {
+        const closeIcon = document.querySelector(".close-menu");
+        const sideMenu = document.querySelector(".menu-lateral");
+
+        closeIcon.addEventListener("click", function () {
+          sideMenu.classList.toggle("open");
+        });
+      });
+    </script>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Sobre Nosotros</h4>
+          <p>
+            En Vitavid, nos esforzamos por proporcionar la mejor atención y servicios para la tercera edad y los niños.
+            Tu bienestar es nuestra prioridad.
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contacto</h4>
+          <p>Email: info@vitavid.com</p>
+          <p>Teléfono: +123 456 7890</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Síguenos</h4>
+          <ul class="socials">
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2023 Vitavid | Diseñado por NatanCejas</div>
+    </footer>
+  </body>
+</html>

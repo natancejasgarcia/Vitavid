@@ -1,0 +1,444 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Quicksand";
+  margin: 0;
+  padding: 0;
+
+  overflow-x: auto;
+}
+.cabecera {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #6dd0ff;
+  padding: 20px;
+  color: #008bce;
+}
+
+.logo11 {
+  flex: 1; /* Esto hace que el logo tome todo el espacio disponible en el medio */
+  text-align: center; /* Esto centra el logo horizontalmente */
+  padding-left: 120px;
+}
+
+.iconos {
+  display: flex;
+  gap: 30px; /* Espaciado entre íconos */
+  position: relative;
+}
+
+.menu-hamburguesa {
+  padding: 13px;
+  font-size: 45px;
+  cursor: pointer;
+  color: #008bce;
+}
+
+.contenido-principal {
+  display: flex;
+  justify-content: center;
+  background: linear-gradient(#6dd0ff, rgb(255, 255, 255));
+}
+.centrar-contenido {
+  display: flex;
+}
+.imagen-contenido img {
+  width: 600px; /* Ancho de la imagen */
+  height: auto;
+  margin-right: 30px; /* Espacio entre la imagen y el texto */
+}
+
+.texto-contenido {
+  flex-grow: 1;
+  padding: 5%; /* Reducido el padding */
+  padding-top: 10%;
+  text-align: center;
+  line-height: 1.9; /* Espaciado entre líneas */
+}
+.boton {
+  padding: 20px 0; /* Cambiado para reducir el espacio en blanco */
+}
+
+.btn-contenido {
+  padding: 25px 20px;
+  width: 55%;
+  height: 40%;
+  background-color: #1bb600;
+  color: #fff;
+  border: none;
+
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-contenido:hover {
+  background-color: #127600;
+}
+
+.separator {
+  width: 80%;
+
+  height: 1px;
+  background-color: #333;
+  margin: 20px auto; /* Ajustado el margen para reducir el espacio en blanco */
+}
+
+.content-block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 35px; /* Ajusta el padding según tus necesidades */
+}
+
+.text-content {
+  flex: 1;
+  text-align: center;
+  font-size: 50px;
+}
+
+.button-content {
+  flex: 1;
+  text-align: center;
+}
+
+.btn-content-block {
+  padding: 15px 20px;
+  background-color: #1bb600;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  font-size: 25px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-content-block:hover {
+  background-color: #127600;
+}
+.trabajamos {
+  font-size: 25px;
+  text-align: center;
+  display: flex;
+  justify-content: center; /* Centra el contenedor de logos horizontalmente */
+  align-items: center; /* Centra el contenedor de logos verticalmente */
+  padding-top: 50px;
+}
+
+@keyframes slide {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-100%);
+  }
+}
+
+.logos {
+  overflow: hidden;
+  padding: 60px 0;
+  background: white;
+  white-space: nowrap;
+  position: relative;
+}
+
+.logos:before,
+.logos:after {
+  position: absolute;
+  top: 0;
+  width: 250px;
+  height: 100%;
+  content: "";
+  z-index: 2;
+}
+
+.logos:before {
+  left: 0;
+  background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+}
+
+.logos:after {
+  right: 0;
+  background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+}
+
+.logos:hover .logos-slide {
+  animation-play-state: paused;
+}
+
+.logos-slide {
+  display: inline-block;
+  animation: 35s slide infinite linear;
+}
+
+.logos-slide img {
+  height: 100px;
+  margin: 0 40px;
+}
+.texto-imagen-container {
+  display: flex;
+  align-items: center; /* Esto centrará verticalmente el contenido */
+  justify-content: space-between; /* Añade espacio entre el texto y la imagen */
+  padding: 20px 0; /* Añade espacio arriba y abajo para la sección */
+}
+
+.texto-lado {
+  flex: 1; /* Ocupa el 50% del ancho */
+  text-align: center; /* Centra el contenido de texto horizontalmente */
+}
+.texto-lado h1 {
+  flex: 1; /* Ocupa el 50% del ancho */
+  font-size: 25px;
+  text-align: center; /* Centra el contenido de texto horizontalmente */
+}
+.imagen-lado {
+  flex: 1; /* Ocupa el 50% del ancho */
+  text-align: center; /* Centra la imagen horizontalmente */
+}
+
+.imagen-lado img {
+  width: 100%; /* Asegura que la imagen ocupe todo el ancho de su contenedor */
+  height: auto; /* Mantiene la proporción de la imagen */
+  max-width: 300px; /* Puedes ajustar esto según el tamaño deseado para tu imagen */
+}
+
+.quote-container {
+  background-color: #e0e0e0; /* Color de fondo gris */
+  padding: 20px; /* Espaciado interno */
+  max-width: 600px; /* Ancho máximo del cuadro */
+  border-radius: 15px; /* Esquinas redondeadas */
+  margin: 50px auto; /* Centrar el cuadro y darle espacio arriba y abajo */
+}
+
+.quote-container p {
+  font-style: italic; /* Estilo cursiva para la cita */
+  font-size: 30px;
+  line-height: 1.5; /* Espaciado entre líneas */
+  margin-bottom: 10px; /* Espacio entre la cita y el nombre del autor */
+}
+
+.quote-container span {
+  display: block; /* Hacer que el nombre del autor ocupe toda la línea */
+  text-align: right; /* Alinear el nombre del autor a la derecha */
+  font-weight: bold; /* Texto en negrita para el nombre del autor */
+}
+.site-footer {
+  background-color: #6dd0ff;
+  color: #333;
+  padding: 40px 0;
+  font-size: 16px;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-around;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 0 20px;
+}
+
+.footer-section h4 {
+  margin-bottom: 20px;
+}
+
+.socials {
+  list-style: none;
+}
+
+.socials li {
+  display: inline-block;
+  margin-right: 15px;
+}
+
+.socials a {
+  color: #333;
+  font-size: 20px;
+  transition: color 0.3s;
+}
+
+.socials a:hover {
+  color: #628c95;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #444;
+  margin-top: 40px;
+}
+.chat-button {
+  position: fixed;
+  bottom: 5vh; /* Ajusta la posición vertical en relación con el viewport height */
+  right: 5vw; /* Ajusta la posición horizontal en relación con el viewport width */
+  background-color: #008bce;
+  color: white;
+  border: none;
+  width: 13vw; /* Ajusta el ancho en relación con el viewport width */
+  height: 10vw; /* Mantén el mismo valor para obtener un círculo perfecto */
+  border-radius: 50%;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 2vw; /* Ajusta el tamaño de la fuente en relación con el viewport width */
+
+  z-index: 1000;
+}
+
+.chat-button:hover {
+  background-color: #4caad6;
+}
+/* Estilos para pantallas más pequeñas */
+@media (max-width: 968px) {
+  /* Aquí puedes establecer estilos específicos para pantallas pequeñas */
+  .logo11 img {
+    max-width: 150px; /* Reducir el tamaño del logo en pantallas pequeñas */
+  }
+  .btn-content-block {
+    padding: 5px 10px;
+    background-color: #1bb600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-size: 15px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  .iconos .icono-usuario,
+  .iconos .menu-hamburguesa {
+    font-size: 40px; /* Reducir el tamaño de los iconos en pantallas pequeñas */
+    padding-left: 100px;
+  }
+
+  .cabecera {
+    display: flex;
+    padding-right: 50px;
+    align-items: center;
+    background-color: #6dd0ff;
+    color: #008bce;
+  }
+  .texto-imagen-container {
+    display: flex;
+    align-items: center; /* Esto centrará verticalmente el contenido */
+    justify-content: space-between; /* Añade espacio entre el texto y la imagen */
+    padding: 20px 0; /* Añade espacio arriba y abajo para la sección */
+  }
+  .h1,
+  h1 {
+    font-size: 1.2rem !important;
+  }
+  .texto-lado {
+    flex: 1; /* Ocupa el 50% del ancho */
+    font-size: 1px;
+    text-align: center; /* Centra el contenido de texto horizontalmente */
+  }
+
+  .imagen-lado {
+    flex: 1; /* Ocupa el 50% del ancho */
+    text-align: center; /* Centra la imagen horizontalmente */
+  }
+
+  .content-block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 25px; /* Ajusta el padding según tus necesidades */
+  }
+  b {
+    font-size: 16px;
+  }
+  @keyframes slide {
+    from {
+      transform: translateX(0);
+    }
+    to {
+      transform: translateX(-100%);
+    }
+  }
+  .btn-contenido {
+    padding: 15px;
+    width: 55%;
+    height: 40%;
+    background-color: #1bb600;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  .logos {
+    overflow: hidden;
+    padding: 30px 0;
+    background: white;
+    white-space: nowrap;
+    position: relative;
+  }
+
+  .logos:before,
+  .logos:after {
+    position: absolute;
+    top: 0;
+    width: 150px;
+    height: 50%;
+    content: "";
+    z-index: 1;
+  }
+  h2 {
+    font-size: 15px !important;
+  }
+  .boton {
+    font-size: 15px;
+    text-align: center;
+  }
+  h3 {
+    font-size: 20px !important;
+  }
+  .imagen-contenido img {
+    width: 200px; /* Ancho de la imagen */
+    height: auto;
+    padding-top: 20px;
+    margin-right: 7px; /* Espacio entre la imagen y el texto */
+  }
+  .logos:before {
+    left: 0;
+    background: linear-gradient(to left, rgba(255, 255, 255, 0), white);
+  }
+
+  .logos:after {
+    right: 0;
+    background: linear-gradient(to right, rgba(255, 255, 255, 0), white);
+  }
+
+  .logos:hover .logos-slide {
+    animation-play-state: paused;
+  }
+
+  .logos-slide {
+    display: inline-block;
+    animation: 35s slide infinite linear;
+  }
+
+  .logos-slide img {
+    height: 50px;
+    margin: 0 20px;
+  }
+}
+
+/* Estilos para pantallas más grandes */
+@media (min-width: 769px) {
+  /* Aquí puedes establecer estilos específicos para pantallas grandes */
+  .logo11 img {
+    max-width: 200px; /* Aumentar el tamaño del logo en pantallas grandes */
+  }
+  .iconos .icono-usuario,
+  .iconos .menu-hamburguesa {
+    font-size: 45px; /* Aumentar el tamaño de los iconos en pantallas grandes */
+  }
+}

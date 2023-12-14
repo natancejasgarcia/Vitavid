@@ -1,0 +1,111 @@
+.area-clientes {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;  /* Espacio entre cajas */
+    padding: 100px;
+}
+
+.box {
+
+    flex-basis: calc(33.33% - 20px); /* Toma en cuenta el espacio (gap) entre cajas */
+    background-color: #f3f4f6;
+    padding:60px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.box:hover {
+    transform: translateY(-10px);
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+.box button {
+    margin-top: 10px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #6dd0ff;
+    color: white;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.box button:hover {
+    background-color: #a6c0cd;
+}
+a{
+    text-decoration: none;
+}
+@media screen and (max-width: 768px) {
+
+    /* Cabecera */
+    .cabecera {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        padding: 10px 5px;
+    }
+
+    .logo11 {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .logo11 img {
+        width: 50%;  /* Ajusta según lo que necesites */
+        height: auto;
+        padding-right: 50px;
+    }
+
+    .iconos {
+        order: 2;
+        display: flex;
+        align-items: center;
+        gap: 10px;
+    }
+
+    .icono-usuario, .menu-hamburguesa {
+       
+        font-size: 24px; /* Ajusta según lo que necesites */
+    }
+    .area-clientes {
+        padding: 40px 20px;
+    }
+
+    .box {
+        flex-basis: 100%;  /* Ahora ocupa el 100% del ancho en móviles */
+        margin-bottom: 20px;
+    }
+
+    .box:last-child {
+        margin-bottom: 0;
+    }
+
+    .box button {
+        width: 100%; /* Hace que el botón ocupe todo el ancho de la caja */
+        padding: 15px;
+    }
+}
+
+    /* Footer */
+    .footer-content {
+        flex-direction: column;
+        align-items: center;
+    }
+    .site-footer {
+        background-color: #6dd0ff;
+        color: #333;
+        padding: 10px 0;
+        font-size: 16px;
+    }
+    
+    .footer-section {
+        text-align: center;
+
+    }
+
+

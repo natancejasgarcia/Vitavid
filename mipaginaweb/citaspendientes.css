@@ -1,0 +1,44 @@
+.container-citas {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 60vh;
+  background-color: #f3f4f6;
+}
+
+.citas-pendientes {
+  background-color: #d9e6f2;
+  padding: 40px;
+  border-radius: 20px;
+  text-align: center;
+  width: 60%;
+  box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column; /* Cambiado a columna */
+  justify-content: space-between; /* Distribución de espacio */
+  height: 300px; /* Definido una altura fija para el cuadro */
+}
+
+.citas-pendientes h2 {
+  font-size: 24px;
+  margin-bottom: 20px;
+}
+
+.btn-cita {
+  padding: 15px 30px;
+  background-color: #6dd0ff;
+  border: none;
+  border-radius: 10px;
+  color: white;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s;
+  justify-content: center;
+}
+
+.btn-cita:hover {
+  background-color: #008bce;
+}
+a {
+  text-decoration: none;
+}

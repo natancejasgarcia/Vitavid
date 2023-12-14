@@ -1,0 +1,39 @@
+.sobre-nosotros {
+    text-align: center;
+    padding: 20px;
+}
+.sobre-nosotros img {
+    width: 500px;
+    height: auto; /* Esto mantiene la proporción de la imagen */
+    margin: 20px 0; /* Margen para darle espacio por encima y por debajo */
+}
+
+
+.info-container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 30px;
+    
+}
+
+.info-box {
+    flex: 1;
+    background-color: #E0F7FA; /* Azul muy flojo */
+    padding: 20px;
+    border-radius: 10px;
+    margin: 0 10px; /* Margen lateral para dar espacio entre los cuadros */
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);  
+}
+
+h3 {
+    border-bottom: 2px solid #6dd0ff;
+    padding-bottom: 10px;
+}
+
+ul {
+    list-style-type: none;
+    padding-left: 0;
+}
+.info-box li{
+    padding: 10px;
+}

@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+body {
+    font-family: 'Quicksand';
+    margin: 0;
+    padding: 0;
+  
+    overflow-x:auto ;
+}
+.cabecera {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #6dd0ff;
+    padding: 20px;
+    color: #008BCE;
+}
+
+.logo11 {
+    flex: 1; /* Esto hace que el logo tome todo el espacio disponible en el medio */
+    text-align: center; /* Esto centra el logo horizontalmente */
+    padding-left: 120px;
+
+ 
+}
+
+.iconos {
+    display: flex;
+    gap: 30px;  /* Espaciado entre íconos */
+    position: relative;
+}
+
+.icono-usuario,
+.menu-hamburguesa {
+    padding: 30px;
+    font-size: 45px;
+    cursor: pointer;
+    color: #008BCE;
+    
+  
+}
+
+.menu-hamburguesa{
+    padding: 13px;
+    font-size: 45px;
+    cursor: pointer;
+    color: #008BCE;
+}
+.carrito-cuadro{
+    margin-left: 23%;
+    padding: 200px;
+}
+.cart {
+    background: #fff;
+    padding: 10px;
+    width: 80%;
+    max-width: 600px;
+    border-radius: 5px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.cart-items {
+    margin-bottom: 20px;
+}
+
+.cart-total {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+}
+
+.btn-checkout {
+    background-color: #007BFF;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    border-radius: 5px;
+    width: 100%;
+}
+
+.btn-checkout:hover {
+    background-color: #0056b3;
+}
+.site-footer {
+    background-color: #6dd0ff;
+    color: #333;
+    padding: 40px 0;
+    font-size: 16px;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-around;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.footer-section {
+    flex: 1;
+    padding: 0 20px;
+}
+
+.footer-section h4 {
+    margin-bottom: 20px;
+}
+
+.socials {
+    list-style: none;
+}
+
+.socials li {
+    display: inline-block;
+    margin-right: 15px;
+}
+
+.socials a {
+    color: #333;
+    font-size: 20px;
+    transition: color 0.3s;
+}
+
+.socials a:hover {
+    color: #6dd0ff;
+}
+
+.footer-bottom {
+    text-align: center;
+    padding-top: 20px;
+    border-top: 1px solid #444;
+    margin-top: 40px;
+}
+.chat-button {
+    position: fixed;
+    bottom: 30px;
+    right: 30px;
+    background-color: #008BCE;
+    color: white;
+    border: none;
+    width: 250px;  /* Ajusta el tamaño del botón */
+    height: 150px;  /* Debe ser igual al width para obtener un círculo perfecto */
+    border-radius: 50%;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.2);
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    font-size: 30px;  /* Ajusta para cambiar el tamaño del ícono */
+    text-align: center;
+    line-height: 60px;  /* Ajusta para centrar verticalmente el ícono */
+    z-index: 1000;
+}
+
+.chat-button:hover {
+    background-color: #006799;
+}

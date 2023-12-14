@@ -1,0 +1,113 @@
+.menu-lateral {
+  padding-top: 40px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 300px; /* Ajusta según prefieras */
+  height: 100vh;
+  background-color: white;
+  transform: translateX(100%); /* Inicialmente oculto */
+  transition: transform 0.3s;
+  box-shadow: -2px 0 5px rgba(0, 0, 0, 0.1); /* Sombra para distinguirlo del resto de la web */
+}
+
+/*.navbar-toggler {
+  margin-left: 250px;  Añade espacio a la izquierda del botón 
+Otros estilos si es necesario */
+
+.menu-lateral.open {
+  transform: translateX(0); /* Se muestra cuando tiene la clase "open" */
+}
+.close-menu {
+  position: absolute;
+  top: 15px;
+  right: 15px; /* Cambia 'left' por 'right' */
+  font-size: 30px;
+  cursor: pointer;
+  color: #008bce;
+  padding: 10px;
+  border-radius: 50%;
+  background-color: rgba(255, 255, 255, 0.7);
+}
+.navbar.bg-light {
+  background-color: #6dd0ff !important;
+}
+.navbar-nav .nav-link {
+  margin-right: 60px; /* Ajusta este valor según tus necesidades */
+}
+.navbar-nav .nav-link:hover {
+  transform: scale(1.05); /* Ligeramente más grande al pasar el cursor */
+  transition: transform 0.3s ease-in-out;
+}
+
+.navbar-nav .nav-link {
+  color: #333333; /* Color de los enlaces */
+}
+.close-menu:hover {
+  background-color: rgba(255, 255, 255, 0.9);
+}
+
+.menu-lateral ul {
+  list-style-type: none;
+  padding: 0;
+}
+
+.menu-lateral ul li {
+  padding: 20px;
+  border-bottom: 1px solid #ddd;
+}
+
+.menu-lateral ul li a {
+  text-decoration: none;
+  color: #333;
+  font-size: 25px;
+  font-weight: bold;
+}
+
+.menu-hamburguesa {
+  cursor: pointer;
+  position: absolute;
+
+  top: 20px;
+  left: -50px; /* Posiciona el icono de hamburguesa dentro del menú desplegable */
+}
+
+/* Estilos adicionales para el icono de hamburguesa cuando el menú está abierto */
+.menu-lateral.open .menu-hamburguesa::before,
+.menu-lateral.open .menu-hamburguesa::after {
+  background-color: #333;
+}
+
+/* Estilos para pantallas pequeñas */
+.navbar-collapse.justify-content-center {
+  flex-grow: 1;
+  justify-content: center;
+}
+@media (max-width: 991px) {
+  .navbar-toggler {
+    margin-left: auto; /* Mueve el botón de hamburguesa a la derecha */
+    margin-right: 40px;
+  }
+
+  .navbar-collapse {
+    text-align: right;
+  }
+
+  .navbar-nav {
+    width: 100%;
+  }
+
+  .nav-item {
+    display: block;
+  }
+
+  .nav-link {
+    text-align: right;
+  }
+}
+
+@media (min-width: 992px) {
+  .navbar-collapse {
+    justify-content: center !important; /* Centra los elementos del menú */
+  }
+}

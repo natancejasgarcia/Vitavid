@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Vitavid | Area de clientes</title>
+    <link rel="stylesheet" href="iniciosesion.css" />
+    <link rel="stylesheet" href="menu.css" />
+    <link rel="stylesheet" href="areaclientes.css" />
+    <link rel="icon" href="vlogo.png" type="image/x-icon" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" />
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+  </head>
+  <body>
+    <header class="cabecera">
+      <div class="iconos icono-izquierdo">
+        <!-- Aquí puedes poner otros íconos si los tienes -->
+      </div>
+      <div class="logo11">
+        <a href="index.html">
+          <img src="logo1.png" alt="Logo Vitavid" />
+        </a>
+      </div>
+      <div class="iconos icono-derecho">
+        <a href="iniciosesion.html">
+          <i class="fas fa-user icono-usuario"></i>
+        </a>
+      </div>
+    </header>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+      <!-- Contenedor para centrar el menú y alinear el botón de hamburguesa a la derecha -->
+      <div class="container-fluid justify-content-between">
+        <!-- Botón de hamburguesa -->
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-toggle="collapse"
+          data-target="#navbarNavDropdown"
+          aria-controls="navbarNavDropdown"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <!-- Elementos del menú -->
+        <div class="collapse navbar-collapse justify-content-center" id="navbarNavDropdown">
+          <ul class="navbar-nav">
+            <li class="nav-item active">
+              <a class="nav-link" href="index.html"><strong>Inicio</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#"><strong>Servicios</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="formulario.html"><strong>Contacto</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="sobrenosotros.html"><strong>Sobre nosotros</strong></a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="trabajaconnosotros.html"><strong>Trabaja con nosotros</strong></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <!-- Bootstrap y dependencias de JavaScript -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+
+    <div class="container mt-4">
+      <div class="row">
+        <div class="col-md-4 mb-4">
+          <div class="box text-center">
+            <h3><i class="fas fa-calendar-plus"></i> Concertar Cita</h3>
+            <a href="bot.html" class="btn btn-primary">Concertar</a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="box text-center">
+            <h3><i class="fas fa-calendar-check"></i> Próximas Citas</h3>
+            <a href="citaspendientes.html" class="btn btn-primary">Ver</a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="box text-center">
+            <h3><i class="fas fa-star"></i> Reseñas</h3>
+            <a href="#" class="btn btn-primary">Ver Reseñas</a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="box text-center">
+            <h3><i class="fas fa-calendar-times"></i> Anular Cita</h3>
+            <a href="#" class="btn btn-primary">Anular</a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="box text-center">
+            <h3><i class="fas fa-cogs"></i> Configuración</h3>
+            <a href="#" class="btn btn-primary">Ajustes</a>
+          </div>
+        </div>
+        <div class="col-md-4 mb-4">
+          <div class="box text-center">
+            <h3><i class="fas fa-headset"></i> Soporte</h3>
+            <a href="#" class="btn btn-primary">Contactar</a>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <script src="bot.js"></script>
+    <footer class="site-footer">
+      <div class="footer-content">
+        <div class="footer-section">
+          <h4>Sobre Nosotros</h4>
+          <p>
+            En Vitavid, nos esforzamos por proporcionar la mejor atención y servicios para la tercera edad y los niños.
+            Tu bienestar es nuestra prioridad.
+          </p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Contacto</h4>
+          <p>Email: info@vitavid.com</p>
+          <p>Teléfono: +123 456 7890</p>
+        </div>
+
+        <div class="footer-section">
+          <h4>Síguenos</h4>
+          <ul class="socials">
+            <li>
+              <a href="#"><i class="fab fa-facebook"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-twitter"></i></a>
+            </li>
+            <li>
+              <a href="#"><i class="fab fa-instagram"></i></a>
+            </li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom">&copy; 2023 Vitavid | Diseñado por NatanCejas</div>
+    </footer>
+  </body>
+</html>
